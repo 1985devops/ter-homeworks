@@ -1,6 +1,25 @@
-###cloud vars
-
 variable "public_key" {
-  type    = string
-  default = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGiVcfW8Wa/DxbBNzmQcwn7hJOj7ji9eoTpFakVnY/AI webinar"
+  type        = string
+  description = "SSH public key for cloud-init"
+
+}
+variable "cloud_id" {
+  type        = string
+  description = "Yandex Cloud ID"
+}
+
+variable "folder_id" {
+  type        = string
+  description = "Yandex Cloud Folder ID"
+}
+
+variable "zone" {
+  type        = string
+  description = "Yandex Cloud Zone"
+  default     = "ru-central1-a"
+}
+
+variable "yc_token" {
+  type        = string
+  description = "Yandex Cloud OAuth or IAM token"
 }
