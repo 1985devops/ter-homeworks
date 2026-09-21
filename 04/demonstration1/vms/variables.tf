@@ -1,8 +1,8 @@
 variable "public_key" {
   type        = string
-  description = "SSH public key for cloud-init"
-
+  description = "SSH public key for VMs"
 }
+
 variable "cloud_id" {
   type        = string
   description = "Yandex Cloud ID"

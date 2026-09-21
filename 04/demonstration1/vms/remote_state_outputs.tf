@@ -1,4 +1,4 @@
-output "out" {
-  value = concat(module.marketing_vm.fqdn, module.analytics_vm.fqdn)
+output "vms_fqdn" {
+  value = [module.test-vm.fqdn, module.example-vm.fqdn]
 }
 
